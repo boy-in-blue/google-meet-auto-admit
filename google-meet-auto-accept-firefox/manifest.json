@@ -1,0 +1,35 @@
+{
+    "name": "Google Meet Auto Admit",
+    "description": "Admit automatically to Google Meets.",
+    "version": "1.2",
+    "manifest_version": 2,
+    "icons": {
+        "16": "./16.png",
+        "32": "./32.png",
+        "48": "./48.png",
+        "128": "./128.png"
+    },
+    "background": {
+        "scripts": [
+            "./background.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://meet.google.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "options_page": "./options.html",
+    "permissions": [
+        "tabs",
+        "https://meet.google.com/*"
+    ]
+}

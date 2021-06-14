@@ -24,10 +24,6 @@
             ]
         }
     ],
-    "action": {
-        "default_popup": "popup.html"
-    },
-    "options_page": "./options.html",
     "permissions": [
         "tabs",
         "https://meet.google.com/*"
